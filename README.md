@@ -17,3 +17,8 @@
 
 8-)Ödünç ver
 
+Kullanım amacı:
+
+Hangi kitabın hangi şahısa hangi süreyle verildiği.
+
+Kitapların takibinin yapılması.
