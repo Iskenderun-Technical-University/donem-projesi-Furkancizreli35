@@ -1,5 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-8d59dc4de5201274e310e4c54b9627a8934c3b88527886e3b421487c677d23eb.svg)](https://classroom.github.com/a/uelKf0-p)
-#Proje içeriği : İşlem paneli altında
+#PROJE ICERIGI : İşlem paneli altında
 
 #1-)Kullanıcı ekleme
 
@@ -17,7 +17,7 @@
 
 8-)Ödünç ver
 
-Kullanım amacı:
+#KULLANIM AMACI:
 
 Hangi kitabın hangi şahısa hangi süreyle verildiği.
 
