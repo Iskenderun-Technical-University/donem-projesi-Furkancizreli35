@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="KütüphaneModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Kullanıcılar">
+          <Key>
+            <PropertyRef Name="kullanıcı_id" />
+          </Key>
+          <Property Name="kullanıcı_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kullanıcı_ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanıcı_soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanıcı_mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="kullanıcı_tel" Type="nvarchar" MaxLength="11" />
+          <Property Name="kullanıcı_ceza" Type="float" />
+          <Property Name="kullanıcı_tc" Type="nvarchar" MaxLength="51" />
+        </EntityType>
+        <EntityType Name="Personel bilgileri">
+          <Key>
+            <PropertyRef Name="Personel_id" />
+          </Key>
+          <Property Name="Personel_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Personel_ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Personel_soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Personel_tc" Type="nchar" MaxLength="11" />
+          <Property Name="Personel_tel" Type="nvarchar" MaxLength="11" />
+          <Property Name="Personel_mail" Type="nvarchar" MaxLength="50" />
+          <Property Name="Personel_adi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Personel_sifre" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="KütüphaneModelStoreContainer">
+          <EntitySet Name="Kullanıcılar" EntityType="Self.Kullanıcılar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personel bilgileri" EntityType="Self.Personel bilgileri" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KütüphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Personel_bilgileri">
+          <Key>
+            <PropertyRef Name="Personel_id" />
+          </Key>
+          <Property Name="Personel_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Personel_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Personel_soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Personel_tc" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+          <Property Name="Personel_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="Personel_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Personel_kullaniciadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Personel_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Personel_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="KütüphaneEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Personel_bilgileri" EntityType="Self.Personel_bilgileri" />
+          <EntitySet Name="Kullanıcılar" EntityType="KütüphaneModel.Kullanıcılar" />
+        </EntityContainer>
+        <EntityType Name="Kullanıcılar">
+          <Key>
+            <PropertyRef Name="kullanıcı_id" />
+          </Key>
+          <Property Name="kullanıcı_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kullanıcı_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanıcı_soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanıcı_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="kullanıcı_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="kullanıcı_ceza" Type="Double" />
+          <Property Name="kullanıcı_tc" Type="String" MaxLength="51" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KütüphaneModelStoreContainer" CdmEntityContainer="KütüphaneEntities">
+          <EntitySetMapping Name="Personel_bilgileri">
+            <EntityTypeMapping TypeName="KütüphaneModel.Personel_bilgileri">
+              <MappingFragment StoreEntitySet="Personel bilgileri">
+                <ScalarProperty Name="Personel_adi" ColumnName="Personel_adi" />
+                <ScalarProperty Name="Personel_id" ColumnName="Personel_id" />
+                <ScalarProperty Name="Personel_ad" ColumnName="Personel_ad" />
+                <ScalarProperty Name="Personel_soyad" ColumnName="Personel_soyad" />
+                <ScalarProperty Name="Personel_tc" ColumnName="Personel_tc" />
+                <ScalarProperty Name="Personel_tel" ColumnName="Personel_tel" />
+                <ScalarProperty Name="Personel_mail" ColumnName="Personel_mail" />
+                <ScalarProperty Name="Personel_sifre" ColumnName="Personel_sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kullanıcılar">
+            <EntityTypeMapping TypeName="KütüphaneModel.Kullanıcılar">
+              <MappingFragment StoreEntitySet="Kullanıcılar">
+                <ScalarProperty Name="kullanıcı_tc" ColumnName="kullanıcı_tc" />
+                <ScalarProperty Name="kullanıcı_ceza" ColumnName="kullanıcı_ceza" />
+                <ScalarProperty Name="kullanıcı_tel" ColumnName="kullanıcı_tel" />
+                <ScalarProperty Name="kullanıcı_mail" ColumnName="kullanıcı_mail" />
+                <ScalarProperty Name="kullanıcı_soyad" ColumnName="kullanıcı_soyad" />
+                <ScalarProperty Name="kullanıcı_ad" ColumnName="kullanıcı_ad" />
+                <ScalarProperty Name="kullanıcı_id" ColumnName="kullanıcı_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
