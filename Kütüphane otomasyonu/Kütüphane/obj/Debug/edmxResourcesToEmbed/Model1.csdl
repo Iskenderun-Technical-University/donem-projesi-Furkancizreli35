@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KütüphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Personel_bilgileri">
+    <Key>
+      <PropertyRef Name="Personel_id" />
+    </Key>
+    <Property Name="Personel_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Personel_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personel_soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personel_tc" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
+    <Property Name="Personel_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="Personel_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personel_kullaniciadi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personel_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Personel_adi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="KütüphaneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Personel_bilgileri" EntityType="Self.Personel_bilgileri" />
+    <EntitySet Name="Kullanıcılar" EntityType="KütüphaneModel.Kullanıcılar" />
+  </EntityContainer>
+  <EntityType Name="Kullanıcılar">
+    <Key>
+      <PropertyRef Name="kullanıcı_id" />
+    </Key>
+    <Property Name="kullanıcı_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kullanıcı_ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kullanıcı_soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kullanıcı_mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kullanıcı_tel" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="kullanıcı_ceza" Type="Double" />
+    <Property Name="kullanıcı_tc" Type="String" MaxLength="51" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>
