@@ -1,9 +1,0 @@
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\bin\Debug\Kütüphane.exe.config
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\bin\Debug\Kütüphane.exe
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.csproj.AssemblyReference.cache
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.csproj.SuggestedBindingRedirects.cache
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.Properties.Resources.resources
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.csproj.GenerateResource.cache
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.csproj.CoreCompileInputs.cache
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.exe
-C:\Users\furka\Desktop\Kutuphane 2\Kütüphane otomasyonu\Kütüphane\obj\Debug\Kütüphane.pdb
