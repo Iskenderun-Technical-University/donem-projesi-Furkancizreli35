@@ -2,24 +2,17 @@
 
 #PROJE ICERIGI : İşlem paneli altında
 
-#1-)Kullanıcı ekleme
+1-)Müşteri ekleme
 
-#2-)Kullanıcı güncelleme
+2-)Araç listeleme
 
-3-)Kullanıcı silme
+3-)Araç ekleme
 
-4-)Kaynak listesi
+4-)Sözleşme
 
-5-)Kaynak ekleme
+5-)Satış işlemleri
 
-6-)Kaynak güncelleme
+KULLANIM AMACI:
 
-7-)Kullanıcı bul
-
-8-)Ödünç ver
-
-#KULLANIM AMACI:
-
-Hangi kitabın hangi şahısa hangi süreyle verildiği.
-
-Kitapların takibinin yapılması.
+* Insanların araç kiralamasını sağlamak.
+* Kiralanan araçların bilgilerini saklamak.
