@@ -1,0 +1,13 @@
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.csproj.AssemblyReference.cache
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.csproj.SuggestedBindingRedirects.cache
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.Anasayfa.resources
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.Properties.Resources.resources
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.csproj.GenerateResource.cache
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.csproj.CoreCompileInputs.cache
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\bin\Debug\AraçKirala.exe.config
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\bin\Debug\AraçKirala.exe
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\bin\Debug\AraçKirala.pdb
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.MüsteriEkle.resources
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.exe
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.pdb
+C:\Users\furka\source\repos\AraçKirala\AraçKirala\obj\Debug\AraçKirala.MüsteriListele.resources
