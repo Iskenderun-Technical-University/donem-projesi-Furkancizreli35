@@ -52,6 +52,18 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="AracEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracEkle.Designer.cs">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AracListele.Designer.cs">
+      <DependentUpon>AracListele.cs</DependentUpon>
+    </Compile>
     <Compile Include="MüsteriEkle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +80,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracEkle.resx">
+      <DependentUpon>AracEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AracListele.resx">
+      <DependentUpon>AracListele.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MüsteriEkle.resx">
       <DependentUpon>MüsteriEkle.cs</DependentUpon>

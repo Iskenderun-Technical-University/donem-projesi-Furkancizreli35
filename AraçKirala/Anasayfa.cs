@@ -36,5 +36,22 @@ namespace AraçKirala
             musterilistelefrm.Show();
 
         }
+
+        private void btnAracEkle_Click(object sender, EventArgs e)
+        {
+            AracEkle araceklefrm =new AracEkle();
+            araceklefrm.Show();
+        }
+
+        private void btnAracListele_Click(object sender, EventArgs e)
+        {
+            AracListele araclistelefrm = new AracListele();
+            araclistelefrm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -93,6 +93,7 @@
             this.btnAracEkle.TabIndex = 4;
             this.btnAracEkle.Text = "                   Araç Ekle";
             this.btnAracEkle.UseVisualStyleBackColor = true;
+            this.btnAracEkle.Click += new System.EventHandler(this.btnAracEkle_Click);
             // 
             // btnAracListele
             // 
@@ -104,6 +105,7 @@
             this.btnAracListele.TabIndex = 5;
             this.btnAracListele.Text = "                   Araç Listele";
             this.btnAracListele.UseVisualStyleBackColor = true;
+            this.btnAracListele.Click += new System.EventHandler(this.btnAracListele_Click);
             // 
             // btnSözlesme
             // 
@@ -136,6 +138,7 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Anasayfa
             // 
